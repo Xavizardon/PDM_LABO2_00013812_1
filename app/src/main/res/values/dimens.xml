@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="univ_padding">8dp</dimen>
+    <dimen name="big_padding">80dp</dimen>
+    <dimen name="text_size">24sp</dimen>
+</resources>
