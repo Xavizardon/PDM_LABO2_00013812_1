@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
     private TextView texto;
 
+    private String aux;
+
     private EditText username, pssword;
 
 
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         btnclck = findViewById(R.id.botonazo);
         texto = findViewById(R.id.textito);
@@ -34,12 +37,14 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
 
     @Override
     public boolean onLongClick(View v) {
-        texto = pssword;
-        return false;
+        aux = pssword.getText().toString();
+        texto.setText(aux);
+        return true;
     }
 
     @Override
     public void onClick(View v) {
-        texto = username;
+        aux = username.getText().toString();
+        texto.setText(aux);
     }
 }
